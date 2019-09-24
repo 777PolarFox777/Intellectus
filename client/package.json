@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "start": "rollup -w -c rollup.config.dev.js",
-    "build": "npm run lint && rollup -c rollup.config.prod.js",
+    "copy": "ncp index.html ../server/public/index.html && ncp ./dist ../server/public/dist",
+    "build": "rollup -c rollup.config.prod.js",
     "lint": "eslint src/**",
     "sass": "node-sass public/scss/main.scss dist/styles.css"
   },
@@ -42,13 +43,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.5",
+    "ncp": "^2.0.0",
     "node-sass": "^4.12.0",
     "rollup": "^1.21.4",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-terser": "5.1.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "5.1.2",
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^1.10.0"
   }

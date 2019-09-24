@@ -2,11 +2,12 @@
   "name": "intellectus-server",
   "version": "0.0.1",
   "description": "Server side for Intellectus",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "npm run test",
-    "start": "node index.js",
-    "lint": "eslint ./**"
+    "build:client": "cd ../client && npm run build && npm run copy && cd ../server",
+    "start": "npm run build:client && node src/index.js",
+    "lint": "eslint src/**"
   },
   "husky": {
     "hooks": {
