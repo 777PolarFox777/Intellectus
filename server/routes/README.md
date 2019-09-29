@@ -7,20 +7,23 @@ type of request: GET
 *** RETURNS ***
 {
 	"token": "string",
-	"questions": {
-		"problems": [
-			"svg or link",
-			"svg or link",
-			...
-			"svg or link"
-		],
-		"options": [
-			"svg or link",
-			"svg or link",
-			...
-			"svg or link"
-		]
-	}
+	"questions": [
+		{
+		  "problem": [
+  			"svg or link",
+  			"svg or link",
+  			...
+  			"svg or link"
+  		],
+  		"options": [
+  			"svg or link",
+  			"svg or link",
+  			...
+  			"svg or link"
+  		]
+		},
+		... objects with the same structure ...
+	]
 } 
 ```
 answers/     
