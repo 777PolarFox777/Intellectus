@@ -71,7 +71,7 @@ type of request: POST
 	"body": "string"
 }
 ```
-report/
+reports/
 -------   
 type of request: POST   
 ```
