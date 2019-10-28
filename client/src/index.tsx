@@ -11,4 +11,5 @@ render(
   document.getElementById('root'),
 );
 
+
 // Тестируем CI/CD
