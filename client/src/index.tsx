@@ -10,3 +10,5 @@ render(
   </Provider>,
   document.getElementById('root'),
 );
+
+// Тестируем CI/CD
